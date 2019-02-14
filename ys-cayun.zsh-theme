@@ -37,6 +37,7 @@ ys_hg_prompt_info() {
 
 local exit_code="%(?,, C:%{$fg[red]%}%?%{$reset_color%}) "
 
+# Conda info
 local conda_info='$(conda_prompt_info)'
 conda_prompt_info() {
   if [ -n "$CONDA_DEFAULT_ENV" ]; then
