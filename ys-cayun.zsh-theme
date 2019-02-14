@@ -47,12 +47,12 @@ conda_prompt_info() {
 
 # Prompt format:
 #
-# PRIVILEGES USER @ MACHINE in DIRECTORY on git:BRANCH STATE [TIME] C:LAST_EXIT_CODE
+# PRIVILEGES USER @ MACHINE in DIRECTORY on git:BRANCH STATE [TIME] (CONDA_ENV) C:LAST_EXIT_CODE
 # $ COMMAND
 #
 # For example:
 #
-# % ys @ ys-mbp in ~/.oh-my-zsh on git:master x [21:47:42] C:0
+# % ys @ ys-mbp in ~/.oh-my-zsh on git:master x [21:47:42] (python3.7) C:0
 # $
 PROMPT="
 %{$terminfo[bold]$fg[blue]%}#%{$reset_color%} \
