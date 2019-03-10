@@ -45,6 +45,16 @@ conda_prompt_info() {
   fi
 }
 
+# virtualenv info
+local virtualenv_info='$(virtualenv_prompt_info)'
+virtualenv_prompt_info() {
+  if [ -n "$VIRTUAL_ENV" ]; then
+    VIRTUAL_ENV_NAME=`basename $VIRTUAL_ENV`
+    echo -n " %{$fg[yellow]%}($VIRTUAL_ENV_NAME)%{$reset_color%}"
+  fi
+}
+
+
 # Prompt format:
 #
 # PRIVILEGES USER @ MACHINE in DIRECTORY on git:BRANCH STATE [TIME] (CONDA_ENV) C:LAST_EXIT_CODE
@@ -65,5 +75,6 @@ ${hg_info}\
 ${git_info} \
 %{$fg[white]%}[%*]\
 ${conda_info}\
+${virtualenv_info}\
 ${exit_code}
 %{$terminfo[bold]$fg[red]%}$ %{$reset_color%}"
