@@ -1,5 +1,10 @@
 # ys-cayun.zsh-theme
-ys-cayun为oh-my-zsh主题，由主题ys扩展而成。支持conda虚拟环境和virtualenv虚拟环境。
+ys-cayun为[oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh)主题，在[主题ys](https://github.com/robbyrussell/oh-my-zsh/blob/master/themes/ys.zsh-theme)基础上修改而成。
+
+主要是做一些个性化的prompt显示。目前支持的功能如下：
+
+- conda虚拟环境
+- virtualenv虚拟环境
 
 ## 预览
 
