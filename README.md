@@ -7,7 +7,7 @@ mzz-ys为一个[oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh)主题，�
 
 #### 未激活虚拟环境环境
 
-![image-20200312135927048](/Users/muzaozong/Library/Application Support/typora-user-images/image-20200312135927048.png)
+![image-20200312135927048](https://img.cayun.me/2020-03-12-061056.png)
 
 #### virtualenv
 
